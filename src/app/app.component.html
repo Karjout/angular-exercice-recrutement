@@ -1,0 +1,47 @@
+<div class="header">
+  <span>Exercice de recrutement : Angular</span>
+</div>
+<div class="instruction">
+  <div class="description">
+    <span>
+      <h2>Instruction :</h2>
+      develop an extension to this component:<br />
+
+      <a href="https://www.primefaces.org/primeng/#/table"
+        >https://www.primefaces.org/primeng/#/table</a
+      >
+      To add an option "slantedColumnHeaders" that when set to true, makes the
+      headers look like the attached picture.<br />
+      All the existing options listed on this page should still work:
+      <a href="https://www.primefaces.org/primeng/#/table"
+        >https://www.primefaces.org/primeng/#/table</a
+      >
+      Including in <br />particular colGroup (see right side of the attached
+      image).<br />sort ✔️.<br />scroll ✔️. <br />resize (each column should be
+      resized), & sticky ✔️.
+    </span>
+  </div>
+</div>
+<p-dataTable
+  [value]="cars"
+  resizableColumns="true"
+  styleClass="myTable"
+  scrollable="true"
+  scrollHeight="1024px"
+  frozenWidth="1024px"
+>
+  <p-column field="vin" header="Vin" rowspan="2" [sortable]="true"></p-column>
+  <p-column field="sales" header="Sales" colspan="3"> </p-column>
+  <p-column field="year" header="Year" [sortable]="true"></p-column>
+  <p-column field="brand" header="Brand" [sortable]="true"></p-column>
+  <p-column field="color" header="Color" [sortable]="true"></p-column>
+</p-dataTable>
+<div class="footer">
+  Made with <span style="color: #e25555">❤ </span>By Karjout Abdeslam<br />
+  &nbsp; View Source code on
+  <a
+    href="https://github.com/karjout/angular-exercice-recrutement"
+    target="_blank"
+    >Github</a
+  >
+</div>
