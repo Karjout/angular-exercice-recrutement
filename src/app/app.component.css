@@ -27,9 +27,7 @@
 .instruction {
   margin-top: 50px;
   top: 60px;
-  z-index: 1;
   background-color: rgb(255, 255, 255);
-  color: rgb(234, 18, 18);
   line-height: 30px;
   padding-left: 15px;
   font-family: Arial;
@@ -56,16 +54,18 @@
 }
 
 p-dataTable {
-  margin-left: 20px;
-  margin-top: 50px;
-  margin-right: 20px;
-  display: block;
+
+  font-family: Arial;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  border-bottom: 1px solid #666666;
+  position: fixed;
 }
 
 :host /deep/ p-datatable th {
   box-shadow: 2px 2px 1px #888888;
   top: 0px;
-  width: auto;
   left: 50px;
   height: 69px;
   vertical-align: middle;
@@ -78,10 +78,7 @@ p-dataTable {
   transform: skew(-45deg, 0deg);
 
 
-
 }
-
-
 
 :host /deep/ p-datatable .ui-column-title {
   -ms-transform: skew(45deg, 0deg) rotate(315deg);
@@ -92,10 +89,8 @@ p-dataTable {
   bottom: 30px;
   left: -25px;
   display: inline-block;
-  width: 100%;
   width: 85px;
   vertical-align: middle;
-  white-space: nowrap;
 }
 
 :host /deep/ p-datatable .ui-sortable-column-icon {
@@ -107,10 +102,5 @@ p-dataTable {
   left: -97px;
   top: 20px;
   position: relative;
-  display: inline-block;
-  width: 100%;
   width: 85px;
-  vertical-align: middle;
-  white-space: nowrap;
-
 }

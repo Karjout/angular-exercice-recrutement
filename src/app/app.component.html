@@ -24,14 +24,32 @@
 </div>
 <p-dataTable
   [value]="cars"
-  resizableColumns="true"
-  styleClass="myTable"
+  [resizableColumns]="true"
   scrollable="true"
-  scrollHeight="1024px"
-  frozenWidth="1024px"
+  scrollHeight="200px"
 >
-  <p-column field="vin" header="Vin" rowspan="2" [sortable]="true"></p-column>
-  <p-column field="sales" header="Sales" colspan="3"> </p-column>
+  <p-headerColumnGroup>
+    <p-row>
+      <p-column
+        field="vin"
+        rowspan="2"
+        header="Vin"
+        [sortable]="true"
+      ></p-column>
+      <p-column header="Sales" id="sales" colspan="3"></p-column>
+    </p-row>
+    <p-row>
+      <p-column
+        field="year"
+        colspan="1"
+        header="Year"
+        [sortable]="true"
+      ></p-column>
+      <p-column field="brand" header="Brand" [sortable]="true"></p-column>
+      <p-column field="color" header="Color" [sortable]="true"></p-column>
+    </p-row>
+  </p-headerColumnGroup>
+  <p-column field="vin" header="Vin" [sortable]="true"></p-column>
   <p-column field="year" header="Year" [sortable]="true"></p-column>
   <p-column field="brand" header="Brand" [sortable]="true"></p-column>
   <p-column field="color" header="Color" [sortable]="true"></p-column>
