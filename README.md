@@ -6,7 +6,8 @@ This feature prevents the header from scrolling with the table thus keeping the 
 
 # Demo
 
-![Uploading Capture.PNG…]()
+
+![Capture](https://user-images.githubusercontent.com/40008276/178537325-25781df1-0948-4bdb-8d7f-6345d317b3b2.PNG)
 
 
 **Soon ...**
