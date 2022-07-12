@@ -6,6 +6,9 @@ This feature prevents the header from scrolling with the table thus keeping the 
 
 # Demo
 
+![Uploading Capture.PNG…]()
+
+
 **Soon ...**
 
 ## Development server
